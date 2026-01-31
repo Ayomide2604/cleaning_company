@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import BootstrapClient from "@/components/BootstrapClient";
 
@@ -20,6 +21,15 @@ export default function RootLayout({
 			<body>
 				<BootstrapClient />
 				{children}
+
+				{/* Load jQuery first */}
+				<Script
+					src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+					strategy="beforeInteractive"
+				/>
+
+				{/* Load your template JS */}
+				<Script src="/assets/js/tidytouch.js" strategy="afterInteractive" />
 			</body>
 		</html>
 	);

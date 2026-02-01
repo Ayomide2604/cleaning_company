@@ -18,7 +18,7 @@ export default function Topbar() {
 							<span className="topbar__info__icon">
 								<MdEmail size={16} />
 							</span>
-							<a href="mailto:tidytouch@envato.com">companyemail@mail.com</a>
+							<a href="mailto:tidytouch@envato.com">Companyemail@mail.com</a>
 						</li>
 						<li>
 							<span className="topbar__info__icon">

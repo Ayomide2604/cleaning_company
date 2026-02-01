@@ -7,6 +7,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import "@/assets/css/tidytouch.css";
 
 import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -27,6 +28,7 @@ export default function RootLayout({
 					<BootstrapClient />
 					<Header />
 					{children}
+					<Footer />
 				</div>
 
 				{/* Load jQuery first */}

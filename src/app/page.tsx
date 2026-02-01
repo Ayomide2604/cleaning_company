@@ -1,9 +1,11 @@
 import Hero from "./Hero";
+import Service from "./Service";
 
 export default function Home() {
 	return (
-		<div className="vh-100">
-			<Hero/>
+		<div>
+			<Hero />
+			<Service />
 		</div>
 	);
 }

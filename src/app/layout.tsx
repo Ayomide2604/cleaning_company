@@ -28,7 +28,7 @@ export default function RootLayout({
 					<BootstrapClient />
 					<Header />
 					{children}
-					<Footer />
+				<Footer />
 				</div>
 
 				{/* Load jQuery first */}

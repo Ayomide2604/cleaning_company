@@ -1,4 +1,6 @@
 // components/Layout/Header.tsx
+
+import Image from "next/image";
 import Topbar from "./Topbar";
 import {
 	FaPhone,
@@ -21,14 +23,22 @@ export default function Header() {
 					<div className="main-header__container container">
 						<div className="main-header__inner">
 							<div className="main-header__logo logo-retina">
-								<a href="index.html">
-									{/* <img
-										src="assets/images/logo-dark.png"
-										alt="tidytouch HTML"
-										width={272}
-									/> */}
+								<a href="/">
+									<Image
+										src="/logo.png"
+										alt="logo"
+										width={80}
+										height={60}
+										priority
+										style={{
+											height: "auto",
+											width: "100%",
+											maxWidth: "180px",
+										}}
+									/>
 								</a>
 							</div>
+
 							{/* /.main-header__logo */}
 							<div className="main-header__right">
 								<nav className="main-header__nav main-menu">

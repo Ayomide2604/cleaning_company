@@ -11,6 +11,7 @@ import {
 	FaInstagram,
 	FaTimes,
 	FaSearch,
+	FaCaretDown,
 } from "react-icons/fa";
 
 export default function Header() {
@@ -33,7 +34,7 @@ export default function Header() {
 										style={{
 											height: "auto",
 											width: "100%",
-											maxWidth: "180px",
+											maxWidth: "80px",
 										}}
 									/>
 								</a>
@@ -49,8 +50,9 @@ export default function Header() {
 										<li>
 											<a href="/about">About Us</a>
 										</li>
-										<li className="dropdown">
+										<li className="d-flex align-items-center gap-1">
 											<a href="#">Services</a>
+											<FaCaretDown />
 
 											<ul>
 												<li>
